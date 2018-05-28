@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+  <!-- Allows us to write text in languages -->
+  <meta charset="utf-8">
+  <title>MEMORY GAME</title>
+  <!-- CSS -->
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Coda:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+  <header>
+    <h1>Memory Game</h1>
+  </header>
+
+  <section class="score-panel">
+
+    <!-- Rating Bar -->
+  	<ul class="stars">
+  		<li><i class="fa fa-star" id="first-star"></i></li>
+  		<li><i class="fa fa-star" id="second-star"></i></li>
+  		<li><i class="fa fa-star" id="third-star"></i></li>
+  	</ul>
+
+    <!-- Move Counter -->
+    <span class="moves">0</span> <p class="moves_text">Moves</p>
+
+    <!-- Restart button -->
+    <div class="restart">
+  		<i class="fa fa-repeat"></i>
+  	</div>
+
+    <!-- Timer -->
+    <div class="timer_container">
+  		<ul class="timer">
+        <li class="hours">00</li>
+        <li class="colon_one">:</li>
+        <li class="minutes">00</li>
+        <li class="colon_two">:</li>
+        <li class="seconds">0s</li>
+      </ul>
+  	</div>
+
+    <!-- The Modal -->
+    <div class="modal">
+      <div class="modal_content">
+        <p class="congratulatory_message">Congratulations, you won!</p>
+        <p class="performance_rating"></p>
+        <p class="time_taken"></p>
+        <p class="moves_taken"></p>
+
+        <div class="play_again_button_container">
+          <button class="play_again_button">Play again</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- DECK OF CARDS -->
+  <!-- This deck contains the cards that the player needs to match. -->
+  <ul class="deck">
+    <li class="card">
+      <i class="fa fa-diamond" id="card_1"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-paper-plane-o" id="card_2"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-anchor" id="card_3"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bolt" id="card_4"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-cube" id="card_5"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-anchor" id="card_6"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-leaf" id="card_7"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bicycle" id="card_8"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-diamond" id="card_9"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bomb" id="card_10"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-leaf" id="card_11"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bomb" id="card_12"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bolt" id="card_13"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bicycle" id="card_14"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-paper-plane-o" id="card_15"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-cube" id="card_16"></i>
+    </li>
+  </ul>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="design.js"></script>
+
+  <!--footer-->
+  <footer>
+     <div class="footer">
+            <div class="footer-text">
+                <p>Vanessa Mollisi</p>
+                <p>Udacity Front-End Nanodegree</p>
+                <p>Memory Game Project</p>
+            </div>
+       </footer>
+</body>
+
+</html>
